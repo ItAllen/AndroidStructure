@@ -1,0 +1,28 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion Integer.parseInt(COMPILESDKVERSION)
+    defaultConfig {
+        minSdkVersion Integer.parseInt(MINSDKVERSION)
+        targetSdkVersion Integer.parseInt(TARGETSDKVERSION)
+        versionCode Integer.parseInt(VERSIONCODE)
+        versionName VERSIONNAME
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api 'androidx.appcompat:appcompat:1.0.0-alpha1'
+    api 'com.google.android.material:material:1.1.0-alpha02'
+}

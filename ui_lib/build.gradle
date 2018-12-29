@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion Integer.parseInt(COMPILESDKVERSION)
+    defaultConfig {
+        minSdkVersion Integer.parseInt(MINSDKVERSION)
+        targetSdkVersion Integer.parseInt(TARGETSDKVERSION)
+        versionCode Integer.parseInt(VERSIONCODE)
+        versionName VERSIONNAME
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation project(':heart')
+}
