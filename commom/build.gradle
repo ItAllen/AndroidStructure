@@ -30,7 +30,7 @@ dependencies {
     api 'com.squareup.retrofit2:converter-gson:2.7.1'
     api 'com.squareup.retrofit2:adapter-rxjava2:2.7.1'
     //http拦截器
-    api 'com.squareup.okhttp3:logging-interceptor:4.3.1'
+    api 'com.squareup.okhttp3:logging-interceptor:4.4.0'
 }
 
 dependencies {
