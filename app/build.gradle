@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion Integer.parseInt(project.COMPILESDKVERSION)
+    compileSdkVersion 29
     defaultConfig {
         applicationId "com.allen.astructure"
         minSdkVersion Integer.parseInt(project.MINSDKVERSION)
