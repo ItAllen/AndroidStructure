@@ -4,10 +4,10 @@ android {
     compileSdkVersion 29
     defaultConfig {
         applicationId "com.allen.astructure"
-        minSdkVersion Integer.parseInt(project.MINSDKVERSION)
-        targetSdkVersion Integer.parseInt(project.TARGETSDKVERSION)
-        versionCode Integer.parseInt(project.VERSIONCODE)
-        versionName project.VERSIONNAME
+        minSdkVersion 26
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
