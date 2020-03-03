@@ -1,12 +1,12 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion Integer.parseInt(COMPILESDKVERSION)
+    compileSdkVersion Integer.parseInt(project.COMPILESDKVERSION)
     defaultConfig {
-        minSdkVersion Integer.parseInt(MINSDKVERSION)
-        targetSdkVersion Integer.parseInt(TARGETSDKVERSION)
-        versionCode Integer.parseInt(VERSIONCODE)
-        versionName VERSIONNAME
+        minSdkVersion Integer.parseInt(project.MINSDKVERSION)
+        targetSdkVersion Integer.parseInt(project.TARGETSDKVERSION)
+        versionCode Integer.parseInt(project.VERSIONCODE)
+        versionName project.VERSIONNAME
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
